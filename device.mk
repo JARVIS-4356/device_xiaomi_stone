@@ -552,6 +552,10 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     xiaomi-telephony-stub
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.xiaomi_sm8350
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
