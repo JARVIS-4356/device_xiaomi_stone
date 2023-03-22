@@ -276,6 +276,9 @@ vendor.gralloc.disable_ubwc=0
 # Media
 debug.stagefright.c2inputsurface=-1
 
+# Multi-Gen LRU
+persist.device_config.mglru_native.lru_gen_config=core
+
 # NFC
 ro.vendor.se.type=HCE,UICC
 ro.vendor.nfc.repair=1
