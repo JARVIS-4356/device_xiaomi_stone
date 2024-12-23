@@ -61,6 +61,8 @@ PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.r_submix.default \
     audio.usb.default \
+    audio.primary.holi \
+    liba2dpoffload \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
@@ -75,7 +77,7 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libsndmonitor \
     libspkrprot \
-    libvisualizer
+    libvisualizer \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
