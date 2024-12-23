@@ -127,14 +127,11 @@ vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/usb_audio_policy_configuration.xml
 
 # Audio Hardware
-vendor/lib/hw/audio.primary.holi.so
-vendor/lib/liba2dpoffload.so
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
-vendor/lib/libssrec.so
 
 # Camera
 vendor/lib64/camera/com.qti.flash.ktd2691.so
