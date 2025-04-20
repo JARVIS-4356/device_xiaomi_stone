@@ -5,7 +5,7 @@
 #
 
 # Call the Dolby Atmos Config
-$(call inherit-product, vendor/dolby/dolby.mk)
+$(call inherit-product, vendor/sony/dolby/dolby.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
