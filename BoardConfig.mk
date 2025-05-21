@@ -240,3 +240,6 @@ BOARD_VNDK_VERSION := current
 
 # Inherit the proprietary files
 include vendor/xiaomi/stone/BoardConfigVendor.mk
+
+# Inherit from proprietary files for Leica Camera
+-include vendor/xiaomi/haydn-miuicamera/products/board.mk

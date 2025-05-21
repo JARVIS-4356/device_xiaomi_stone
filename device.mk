@@ -7,6 +7,9 @@
 # Call the Dolby Atmos Config
 $(call inherit-product, vendor/sony/dolby/dolby.mk)
 
+# Call the Leica Camera setup
+$(call inherit-product-if-exists, vendor/xiaomi/haydn-miuicamera/products/miuicamera.mk)
+
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
