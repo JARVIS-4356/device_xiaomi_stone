@@ -330,9 +330,17 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_hevcdec \
     libcodec2_soft_hevcenc
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs_holi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_holi.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_performance_holi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_holi.xml
+PRODUCT_PACKAGES += \
+    media_codecs_blair.xml \
+    media_codecs_blair_lite.xml \
+    media_codecs_performance_blair.xml \
+    media_codecs_performance_blair_lite.xml \
+    media_codecs_vendor_audio.xml \
+    media_profiles_blair.xml \
+    media_profiles_blair_lite.xml \
+    video_system_specs.json \
+    video_system_specs_blair.json \
+    video_system_specs_blair_lite.json
 
 # Mlipay
 PRODUCT_PACKAGES += \

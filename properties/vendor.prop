@@ -275,6 +275,7 @@ vendor.gralloc.disable_ubwc=0
 
 # Media
 debug.stagefright.c2inputsurface=-1
+vendor.media.target_variant=_blair_lite
 
 # NFC
 ro.vendor.se.type=HCE,UICC
