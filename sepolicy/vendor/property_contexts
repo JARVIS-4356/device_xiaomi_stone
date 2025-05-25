@@ -6,12 +6,8 @@ persist.vendor.btstack.              u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bt.                   u:object_r:vendor_bluetooth_prop:s0
 
 # Camera
-persist.camera.                         u:object_r:vendor_camera_prop:s0
-ro.boot.camera.config                   u:object_r:vendor_camera_prop:s0
-ro.vendor.camera.                       u:object_r:vendor_camera_prop:s0
-vendor.camera.aux.packageblacklist      u:object_r:vendor_camera_prop:s0
-vendor.camera.config.                   u:object_r:vendor_camera_prop:s0
-vendor.camera.sensor.                   u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.    u:object_r:vendor_camera_sensor_prop:s0
+ro.boot.camera.config    u:object_r:vendor_camera_sensor_prop:s0
 
 # Fastcharge HAL
 persist.vendor.sec.fastchg_enabled              u:object_r:vendor_fastcharge_prop:s0

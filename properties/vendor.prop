@@ -168,6 +168,8 @@ ro.vendor.fm.use_audio_session=true
 
 # Camera
 camera.disable_zsl_mode=true
+ro.hardware.camera=xiaomi
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # Charger
 persist.vendor.charge.oneTrack=true

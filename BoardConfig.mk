@@ -63,6 +63,12 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
+# Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+
+# Inherit from proprietary files for Leica Camera
+-include vendor/xiaomi/stone-miuicamera/products/board.mk
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 

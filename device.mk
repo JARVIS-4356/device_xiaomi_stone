@@ -7,6 +7,9 @@
 # Call the Dolby Atmos Config
 $(call inherit-product, vendor/sony/dolby/dolby.mk)
 
+# Call the Leica Camera setup
+$(call inherit-product-if-exists, vendor/xiaomi/stone-miuicamera/products/miuicamera.mk)
+
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
@@ -134,6 +137,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
+
 # Configstore
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
@@ -166,6 +172,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
+    android.hardware.graphics.allocator@3.0.vendor \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
